@@ -70,3 +70,19 @@ const bodyChildren = bodyElement.children;
 // 2: script
 // length: 3
 // [[Prototype]]: HTMLCollection
+
+
+// Первые и последние дочерние элементы объекта body
+const firstChild = bodyElement.firstElementChild;
+const lastChild = bodyElement.lastElementChild;
+console.log(firstChildNode); // #text
+console.log(lastChildNode); // #text
+
+
+// Соседние и родительские элементы объекта body
+const previousSibling = bodyElement.previousElementSibling;
+const nextSibling = bodyElement.nextElementSibling;
+const parentElement = bodyElement.parentElement;
+console.log(previousSibling); // <head></head>
+console.log(nextSibling); // null
+console.log(parentElement); // <html></html>
