@@ -70,36 +70,3 @@ const bodyChildren = bodyElement.children;
 // 2: script
 // length: 3
 // [[Prototype]]: HTMLCollection
-
-
-
-
-// Задача 14.1
-// Найти все DOM-узлы html-разметки index.html.
-
-const section = bodyElement.querySelector('.methods');
-console.log(section); 
-
-const sectionNodes = section.childNodes;
-console.log(sectionNodes); 
-// NodeList(5) [text, h2, text, div.methods-content, text]
-// 0: text
-// 1: h2
-// 2: text
-// 3: div.methods-content
-// 4: text
-// length: 5
-// [[Prototype]]: NodeList
-
-const sectionElements = section.children;
-console.log(sectionElements); // h2, div.methods-content
-// HTMLCollection(2) [h2, div.methods-content]
-// 0: h2
-// 1: div.methods-content
-// length: 2
-// [[Prototype]]: HTMLCollection
-
-
-const h2 = section.querySelector('h2');
-console.log(h2); // <h2>Методы NodeList</h2>
-console.log(h2.value); // <h2>Методы NodeList</h2>
