@@ -1,2 +1,3 @@
 import './index.scss';
-import './js/task_14.2';
+import './js/DOM_info';
+import './js/task_14.1';
