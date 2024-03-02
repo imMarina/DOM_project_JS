@@ -156,3 +156,11 @@ for (let div of divElems) {
     });
 
 
+
+    // divElems.forEach(div => {
+    //     div.classList.add('div');
+    // });
+
+
+
+
