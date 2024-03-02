@@ -169,6 +169,68 @@ elems.forEach(item => {
 // возвращает элементы, которые имеют данный CSS - класс.
 
 
+// Стили и классы
+// Свойства className и classList
+
+
+// Свойство className
+
+// Получаем элемент
+const element = document.querySelector('.lesson__item-list_red');
+
+// Получаем имена классов
+const elementClassNames = element.className;
+console.log(elementClassNames);
+
+// Перезаписываем имя класса
+element.className = "red";
+
+
+//-----------------------------
+
+// Свойство classList
+
+// Добавить класс
+element.classList.add('active');
+// Удалить класс
+element.classList.remove('active');
+// Добавить класс, если его нет, а если есть удалить.
+element.classList.toggle('active');
+// Проверка наличия класса, возвращает true/false.
+element.classList.contains('active');
+
+
+// Управление стилями
+// element.style
+
+// Задаем стиль с помощью CSS свойства
+element.style.color = "red";
+
+// Для свойства из нескольких слов используется camelCase:
+// margin-bottom
+element.style.marginBottom = "30px";
+// z-index
+element.style.zIndex = "10";
+// и т.д.
+
+// Каждое свойство пишется отдельно
+
+// Получение значения свойства
+// Только если оно записано в атрибуте style
+console.log(element.style.marginBottom);
+
+// Сброс стиля
+element.style.marginBottom = "";
+
+//Полная перезапись стилей
+//style.cssText
+
+element.style.cssText = `
+	margin-bottom: 30px;
+	color:red;
+`;
+
+
 
 
 
