@@ -267,7 +267,7 @@ ul {
     width: 535px;
     height: 490px;
 
-    border: 2px solid yellow;
+    // border: 2px solid yellow;
 }
 
 .container__section-text {
@@ -357,7 +357,8 @@ ul {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid blue;
+    
+    // border: 2px solid blue;
 }
 
 .container__section-statistics__items {
@@ -365,11 +366,26 @@ ul {
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid red;
+    
+    // border: 2px solid red;
 }
 
+.item-1__number, .item-2__number, .item-3__number {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 56px;
+    color: #F0E714;
+}
 
-
+.item-1__text, .item-2__text, .item-3__text {
+    margin-top: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
 
 .container-section__clients-list {
     height: 158px;
