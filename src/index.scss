@@ -44,7 +44,7 @@ html {
 
 .page {
     margin: 0 auto;
-    max-width: 1440px;
+    max-width: 1340px;
 
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -70,7 +70,7 @@ ul {
 
 /* Header-menu part */
 .wrapper-main {
-    height: 955px;
+    height: 855px;
     background-color: #101C26;
 
     background-image: image-set(
@@ -195,7 +195,8 @@ ul {
 }
 
 .main-container__top {
-    height: 673px;
+    height: 573px;
+    // 673px
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -206,7 +207,7 @@ ul {
 
 .main__nav-menu {
     align-self: stretch;
-    width: 200px;
+    width: 150px;
 
     // border: 2px solid red;
 }
@@ -222,7 +223,7 @@ ul {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 35px;
+    font-size: 25px;
     color: #CECECE;
 }
 
@@ -231,16 +232,20 @@ ul {
 }
 
 .sections-images {
+    margin-top: 50px;
     display: flex;
+    align-self: start;
+    flex-flow: column nowrap;
     justify-content: center;
-    width: 1000px;
+    align-items: center;
+
     // border: 2px solid yellow;
 }
 
 .container-section-img1 {
     position: relative;
-    width: 753px;
-    height: 599px;
+    width: 553px;
+    height: 399px;
 
     background-image: url('./static/images/Group_of_people.png');
     background-repeat: no-repeat;
@@ -251,21 +256,23 @@ ul {
 
 .container-section-img2 {
     position: absolute;
-    width: 202px;
-    height: 235px;
-    top: 320px;
-    left: -100px;
+    bottom: -100px;
+    left: -30px;
+    width: 150px;
+    height: 185px;
+
 
     background-image: url('./static/images/MarketStatic.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
     // border: 2px solid pink;
 }
 
 .main__sections-text {
-    width: 535px;
-    height: 490px;
+    width: 435px;
+    height: 390px;
 
     // border: 2px solid yellow;
 }
@@ -276,16 +283,17 @@ ul {
 }
 
 .container__section-text h1 {
-    font-weight: 700;
+    margin-top: 0;
+    font-weight: 500;
     font-style: normal;
-    font-size: 60px;
-    line-height: 66px;
+    font-size: 45px;
+    line-height: 50px;
 }
 
 .container__section-text p {
     width: 400px;
     height: 64px;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
     font-size: 20px;
     line-height: 22px;
@@ -298,14 +306,14 @@ ul {
 
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 15px;
+    line-height: 20px;
     color: #101C26;
 }
 
 .container__section-btn-1 {
-    width: 197px;
-    height: 60px;
+    width: 130px;
+    height: 50px;
     
     display: flex;
     flex-flow: row nowrap;
@@ -329,8 +337,9 @@ ul {
 }
 
 .container__section-btn-2 {
-    width: 197px;
-    height: 60px;
+    margin-left: 15px;
+    width: 130px;
+    height: 50px;
     
     display: flex;
     flex-flow: row nowrap;
@@ -342,8 +351,8 @@ ul {
 }
 
 .container__section-btn-2__img {
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
 
     background-image: url('./static/images/Button_play.png');
     background-repeat: no-repeat;
@@ -372,16 +381,16 @@ ul {
 
 .item-1__number, .item-2__number, .item-3__number {
     font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    font-size: 44px;
-    line-height: 56px;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 46px;
     color: #F0E714;
 }
 
 .item-1__text, .item-2__text, .item-3__text {
-    margin-top: 20px;
+    margin-top: 3px;
     font-family: "Roboto", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 28px;
     color: #FFFFFF;
