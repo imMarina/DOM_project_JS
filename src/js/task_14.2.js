@@ -35,20 +35,14 @@ headerMenu.classList = 'header-menu';
 console.log(headerMenu); // <div class="header-menu"></div>
 
 
-// Создаем 3 элемента DIV для наполнения контентом
+// Создаем 3 элемента DIV для наполнения контентом и добавляем временный class
 for (let i = 0; i < 3; i++) {
     const div = document.createElement('div');
     headerMenu.append(div);
     div.classList.add('header-menu__div'); 
 }
 
-// const divElems = document.querySelectorAll('.header-menu.header-menu__div');
-// console.log(divElems);
-// 4. Поиск по тегу первого уровня вложенности
-// const elemsFour = document.querySelectorAll('.classParent>tegChild');
-// console.log(elemsFour);
-
-
+// Находим дочерние элементы headerMenu
 const divChildren = headerMenu.children;
 console.log(divChildren);
 // output
@@ -59,6 +53,7 @@ console.log(divChildren);
 // length: 3
 // [[Prototype]]: HTMLCollection
 
+// меняем class у DIV 
 divChildren[0].classList = 'header-menu__logo';
 divChildren[1].classList = 'header-menu__list';
 divChildren[2].classList = 'header-menu__buttons';
