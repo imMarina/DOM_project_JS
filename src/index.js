@@ -1,3 +1,3 @@
 import './index.scss';
-// import './js/DOM_info';
-import './js/task_input';
+// import './js/task_input';
+import './js/task_get_data_input';

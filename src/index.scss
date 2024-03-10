@@ -2,21 +2,7 @@
 @import 'style/fonts';
 @import 'style/var';
 @import 'style/style';
+// @import 'style/input_1.scss';
+@import 'style/input_2.scss';
 
 
-#root {
-    height: 100vh;
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-.input-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
