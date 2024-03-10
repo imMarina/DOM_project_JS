@@ -1,0 +1,272 @@
+// ASIDE MAIN-Sections part
+.main-container {
+    margin: 0 80px;
+    display: flex;
+    flex-direction: column;
+
+    // border: 2px solid blue;
+}
+
+.main-container__top {
+    height: 573px;
+    // 673px
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    // border: 2px solid red;
+}
+
+.main__nav-menu {
+    align-self: stretch;
+    width: 150px;
+
+    // border: 2px solid red;
+}
+
+.main__nav-menu__list-items {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+.main__nav-menu__list-items li a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    color: #CECECE;
+}
+
+.main__nav-menu__list-items li .selected {
+    color: #FFFFFF;
+}
+
+.sections-images {
+    margin-top: 50px;
+    display: flex;
+    align-self: start;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    // border: 2px solid yellow;
+}
+
+.container-section-img1 {
+    position: relative;
+    width: 553px;
+    height: 399px;
+
+    background-image: url('./static/images/Group_of_people.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    // border: 2px solid pink;
+}
+
+.container-section-img2 {
+    position: absolute;
+    bottom: -100px;
+    left: -30px;
+    width: 150px;
+    height: 185px;
+
+
+    background-image: url('./static/images/MarketStatic.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    // border: 2px solid pink;
+}
+
+.main__sections-text {
+    width: 435px;
+    height: 390px;
+
+    // border: 2px solid yellow;
+}
+
+.container__section-text {
+    font-family: "Roboto", sans-serif;
+    color: #F3F4F6;
+}
+
+.container__section-text h1 {
+    margin-top: 0;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 45px;
+    line-height: 50px;
+}
+
+.container__section-text p {
+    width: 400px;
+    height: 64px;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.container__section-buttons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #101C26;
+}
+
+.container__section-btn-1 {
+    width: 130px;
+    height: 50px;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 30px;
+    background-color: #F0E714;
+}
+
+.container__section-btn-1__img {
+    width: 24px;
+    height: 16px;
+    color: #101C26;
+
+    background-image: url('./static/images/Arrow.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container__section-btn-2 {
+    margin-left: 15px;
+    width: 130px;
+    height: 50px;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    color: #F3F4F6;
+}
+
+.container__section-btn-2__img {
+    width: 24px;
+    height: 24px;
+
+    background-image: url('./static/images/Button_play.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container__section-statistics {
+    height: 130px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    // border: 2px solid blue;
+}
+
+.container__section-statistics__items {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    // border: 2px solid red;
+}
+
+.item-1__number, .item-2__number, .item-3__number {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 46px;
+    color: #F0E714;
+}
+
+.item-1__text, .item-2__text, .item-3__text {
+    margin-top: 3px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.container-section__clients-list {
+    height: 158px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clients-list__item-1 {
+    width: 101px;
+    height: 33px;
+    background-image: url('./static/images/Google_logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.clients-list__item-2 {
+    width: 166px;
+    height: 33px;
+    background-image: url('./static/images/Dropbox_logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.clients-list__item-2 {
+    width: 166px;
+    height: 33px;
+    background-image: url('./static/images/Dropbox_logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.clients-list__item-3 {
+    width: 115px;
+    height: 35px;
+    background-image: url('./static/images/Amazon_logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.clients-list__item-4 {
+    width: 188px;
+    height: 23px;
+    background-image: url('./static/images/Atlassian_logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.clients-list__item-5 {
+    width: 124px;
+    height: 34px;
+    background-image: url('./static/images/HubSpot_logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
