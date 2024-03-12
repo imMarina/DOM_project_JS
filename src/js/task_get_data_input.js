@@ -83,40 +83,23 @@ inputs.forEach( (input) => {
 
     console.log(inputElem.getAttribute('type'));
 
-    // validation of PASSWORD
+    // extra div for PASSWORD
     if (inputElem.getAttribute('type') === 'password') {
         const TPL = `
             <div class='div-text'><b>${input.type}</b> must be at least 6 characters, contain 1 uppercase, 1 lowercase, 1 number</div>
         `;
         formElem.insertAdjacentHTML('afterbegin', TPL);
-
-        // validation
-        const regExp = /(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,}/g;
-        if (!inputElem.value.match(regExp)) {
-            result.textContent = 'Your password is wrong, please try again!';
-            result.textContent = '';
-        } else {
-            result.textContent = inputElem.value;
-            inputElem.value = '';
-        }
     }
 
-    // validation of EMAIL
+    // extra div for EMAIL
     if (inputElem.getAttribute('type') === 'email') {
         const TPL = `
-            <div class='div-text'>please enter your <b>${input.type}</b></div>
+            <div class='div-text'><b>${input.type}</b> must contain the '@' symbol and the domain name</div>
         `;
         formElem.insertAdjacentHTML('afterbegin', TPL);
-    
-        // validation
-        const regExp = /^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i;
-        if (inputElem.value.match(regExp)) {
-            result.textContent = inputElem.value;
-            inputElem.value = '';
-        } else {
-            result.textContent = "Missing the '@' symbol or the domain name, please try again!";
-        }
+
     }
+
 
     // CHECKBOX
     if (inputElem.getAttribute('type') === 'checkbox') {
@@ -132,6 +115,34 @@ inputs.forEach( (input) => {
             }
         });
 
+    } else if (inputElem.getAttribute('type') === 'password')  {
+        // validation PASSWORD
+        btn.addEventListener("click", () => {
+            const data = inputElem.value;
+            const regExp = /(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{6,}/g;
+
+            if (data.match(regExp)) {
+                result.textContent = data;
+                inputElem.value = '';
+            } else {
+                result.textContent = 'Your password is wrong, please try again!';
+                // result.textContent = '';
+            }
+        });
+
+    } else if (inputElem.getAttribute('type') === 'email')  {
+        // validation EMAIL
+        btn.addEventListener("click", () => {
+            const data = inputElem.value;
+            const regExp = /^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i;
+
+            if (data.match(regExp)) {
+                result.textContent = data;
+                inputElem.value = '';
+            } else {
+                result.textContent = "Your email is wrong, please try again!";
+            }
+        });
     } else {
         btn.addEventListener("click", () => {
             const data = inputElem.value;
