@@ -1,0 +1,105 @@
+
+/*
+<div class="card card-1">
+<div class="card__inside">
+    <div class="card__image">
+        <a href="#" class="card__image">
+            <img src="./static/images/Frame1.png" alt="Product management"/>
+        </a>
+    </div>
+    <div class="card__description">
+        <span class="card__title">Product Management</span>
+        <span class="card__price">100$</span>
+    </div>
+
+    <button class="card__add">Add to cart / Order now</button>
+</div>
+</div> */
+
+
+.container__section-cards {
+    // margin: 0 80px;
+    height: 880px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+    background-color: rgba(241, 240, 255, 0.857);
+    border: 2px solid blue;
+}
+
+.container-text {
+    height: 300px;
+    width: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid red;
+}
+
+.container-text__button {
+    margin-bottom: 10px;
+    width: 150px;
+    height: 40px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-yellow);
+    opacity: 20%;
+    border-radius: 30px;
+}
+
+
+.container-text__button span {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: var(--color-bg);
+}
+
+.container-text h2 {
+    margin: 0;
+    width: 490px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 56px;
+    text-align: center;
+    color: var(--color-bg);
+}
+
+.container-text p {
+    margin: 0;
+    width: 600px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: var(--color-grey);
+}
+
+.container-cards {
+    margin: 0 80px;
+    height: 500px;
+    // width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-self: stretch;
+    justify-content: space-between;
+    border: 2px solid blue;
+}
+
+.card {
+    width: 200px;
+    height: 180px;
+    border-radius: 10px;
+    // padding: 30px;
+}
