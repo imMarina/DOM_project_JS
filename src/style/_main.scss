@@ -20,12 +20,13 @@
 
 .main__nav-menu {
     align-self: stretch;
-    width: 150px;
+    max-width: 150px;
 
     // border: 2px solid red;
 }
 
 .main__nav-menu__list-items {
+    width: inherit;
     height: 100%;
     display: flex;
     flex-flow: column nowrap;
@@ -37,11 +38,11 @@
     font-weight: 400;
     font-style: normal;
     font-size: 25px;
-    color: #CECECE;
+    color: var(--color-primary);
 }
 
 .main__nav-menu__list-items li .selected {
-    color: #FFFFFF;
+    color: var(--color-white);
 }
 
 .sections-images {
@@ -55,15 +56,18 @@
     // border: 2px solid yellow;
 }
 
+.container-section-img1, .container-section-img2, .container__section-btn-1__img, .container__section-btn-2__img, .clients-list__item-1, .clients-list__item-2, .clients-list__item-3, .clients-list__item-4, .clients-list__item-5 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .container-section-img1 {
     position: relative;
     width: 553px;
     height: 399px;
 
     background-image: url('./static/images/Group_of_people.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     // border: 2px solid pink;
 }
 
@@ -74,12 +78,7 @@
     width: 150px;
     height: 185px;
 
-
     background-image: url('./static/images/MarketStatic.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
     // border: 2px solid pink;
 }
 
@@ -92,7 +91,7 @@
 
 .container__section-text {
     font-family: "Roboto", sans-serif;
-    color: #F3F4F6;
+    color: var(--color-secondary);
 }
 
 .container__section-text h1 {
@@ -121,7 +120,7 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 20px;
-    color: #101C26;
+    color: var(--color-bg);
 }
 
 .container__section-btn-1 {
@@ -135,18 +134,15 @@
     gap: 10px;
 
     border-radius: 30px;
-    background-color: #F0E714;
+    background-color: var(--color-yellow);
 }
 
 .container__section-btn-1__img {
     width: 24px;
     height: 16px;
-    color: #101C26;
+    color: var(--color-bg);
 
     background-image: url('./static/images/Arrow.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 .container__section-btn-2 {
@@ -160,7 +156,7 @@
     align-items: center;
     gap: 10px;
 
-    color: #F3F4F6;
+    color: var(--color-secondary);
 }
 
 .container__section-btn-2__img {
@@ -168,9 +164,6 @@
     height: 24px;
 
     background-image: url('./static/images/Button_play.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 .container__section-statistics {
@@ -197,7 +190,7 @@
     font-weight: 500;
     font-size: 34px;
     line-height: 46px;
-    color: #F0E714;
+    color: var(--color-yellow);
 }
 
 .item-1__text, .item-2__text, .item-3__text {
@@ -206,7 +199,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
-    color: #FFFFFF;
+    color: var(--color-white);
 }
 
 .container-section__clients-list {
@@ -221,52 +214,34 @@
     width: 101px;
     height: 33px;
     background-image: url('./static/images/Google_logo.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 .clients-list__item-2 {
     width: 166px;
     height: 33px;
     background-image: url('./static/images/Dropbox_logo.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 .clients-list__item-2 {
     width: 166px;
     height: 33px;
     background-image: url('./static/images/Dropbox_logo.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 .clients-list__item-3 {
     width: 115px;
     height: 35px;
     background-image: url('./static/images/Amazon_logo.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 .clients-list__item-4 {
     width: 188px;
     height: 23px;
     background-image: url('./static/images/Atlassian_logo.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 .clients-list__item-5 {
     width: 124px;
     height: 34px;
     background-image: url('./static/images/HubSpot_logo.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
