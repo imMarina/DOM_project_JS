@@ -1,35 +1,19 @@
+// Section with CARDS
 
-/*
-<div class="card card-1">
-<div class="card__inside">
-    <div class="card__image">
-        <a href="#" class="card__image">
-            <img src="./static/images/Frame1.png" alt="Product management"/>
-        </a>
-    </div>
-    <div class="card__description">
-        <span class="card__title">Product Management</span>
-        <span class="card__price">100$</span>
-    </div>
-
-    <button class="card__add">Add to cart / Order now</button>
-</div>
-</div> */
-
-
-.container__section-cards {
+.section-cards {
     // margin: 0 80px;
-    height: 880px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 50px;
 
-    background-color: rgba(241, 240, 255, 0.857);
-    border: 2px solid blue;
+    background-color: var(--color-secondary);
+    // border: 2px solid blue;
 }
 
 .container-text {
+    margin-top: 30px;
     height: 300px;
     width: 620px;
     display: flex;
@@ -37,7 +21,7 @@
     justify-content: center;
     align-items: center;
 
-    border: 2px solid red;
+    // border: 2px solid red;
 }
 
 .container-text__button {
@@ -88,18 +72,57 @@
 
 .container-cards {
     margin: 0 80px;
-    height: 500px;
+    margin-bottom: 50px;
+    height: auto;
     // width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
+    gap: 30px;
     align-self: stretch;
     justify-content: space-between;
-    border: 2px solid blue;
+    
+    // border: 2px solid blue;
+}
+
+.container-card {
+    width: 270px;
+    height: 220px;
+    border-radius: 10px;
+    background-color: var(--color-white);
 }
 
 .card {
-    width: 200px;
-    height: 180px;
-    border-radius: 10px;
-    // padding: 30px;
+    padding: 24px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
 }
+
+.card__image {
+    width: 54px;
+    height: 54px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card__title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    color: var(--color-dark);
+}
+
+.card-btn {
+    width: 150px;
+    height: 35px;
+    color: var(--color-primary);
+    background-color: var(--color-bg);
+    border-color: var(--color-primary);
+    border-radius: 20px;
+}
+
+
