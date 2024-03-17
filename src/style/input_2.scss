@@ -33,42 +33,41 @@ html {
     font-size: 20px;
     color: var(--color-purple);
 
-    // background-image: url('./static/images/Background_Input.jpg');
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position: center;
+
+    form {
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+
+        input, button, select, textarea {      
+            padding: 10px;
+            font-size: 15px;
+            background: none;
+            color: var(--color-purple);
+            border: 2px solid var(--color-primary);
+            border-radius: 10px;
+            // outline: none;
+        }
+        
+        #input-5 {
+            padding: 20px;
+        }
+        
+        .div-input {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .out {
+            height: 20px;
+            font-size: 15px;
+        }
+    }
 }
 
-form {
-    padding-left: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 10px;
-}
-
-input, button { 
-    background: none;
-
-    padding: 10px;
-    font-size: 15px;
-    color: var(--color-purple);
-    border: 2px solid var(--color-primary);
-    border-radius: 10px;
-}
-
-#input-5 {
-    padding: 20px;
-}
 
 
-.div-input {
-    display: flex;
-    gap: 15px;
-}
 
-.out {
-    height: 20px;
-    font-size: 15px;
-}
 
