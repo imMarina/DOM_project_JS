@@ -9,10 +9,12 @@ const title = section.querySelector('h2');
 const divMain = section.querySelector('.methods-content');
 // console.log(divMain); // <div class="methods-content">...</div>
 
-const methods = [];
-
 const divElements = divMain.querySelectorAll('div');
 // console.log(divElements); // NodeList(5) [div#item_index, div#entries, div#foreach, div#keys, div#values]
+
+
+// First solution
+const methods = [];
 
 divElements.forEach( (div) => {
 
@@ -35,30 +37,30 @@ console.log(methods);
 // 4: {id: 'values', firstChild: h4, lastChild: p}
 // length: 5 [[Prototype]]: Array(0)
 
-// [
-//     {
-//         "id": "item_index",
-//         "firstChild": {},
-//         "lastChild": {}
-//     },
-//     {
-//         "id": "entries",
-//         "firstChild": {},
-//         "lastChild": {}
-//     },
-//     {
-//         "id": "foreach",
-//         "firstChild": {},
-//         "lastChild": {}
-//     },
-//     {
-//         "id": "keys",
-//         "firstChild": {},
-//         "lastChild": {}
-//     },
-//     {
-//         "id": "values",
-//         "firstChild": {},
-//         "lastChild": {}
-//     }
-// ]
+
+
+// Second solution
+
+let obj = {};
+
+divElements.forEach( (div) => {
+    obj[div.getAttribute('id')] = div;
+});
+
+console.log(obj);
+
+// {
+//     "item_index": {},
+//     "entries": {},
+//     "foreach": {},
+//     "keys": {},
+//     "values": {}
+// }
+
+// {item_index: div#item_index, entries: div#entries, foreach: div#foreach, keys: div#keys, values: div#values}
+// entries: div#entries
+// foreach: div#foreach
+// item_index: div#item_index
+// keys: div#keys
+// values: div#values
+// [[Prototype]]: Object
