@@ -27,31 +27,31 @@ const divChildren = headerMenu.children;
 // [[Prototype]]: HTMLCollection
 
 // добавляем class для DIV 
-divChildren[0].classList.add('header-menu__logo');
-divChildren[1].classList.add('header-menu__list');
-divChildren[2].classList.add('header-menu__buttons');
+divChildren[0].classList.add('logo');
+divChildren[1].classList.add('list');
+divChildren[2].classList.add('buttons');
 // console.log(divChildren);
 // output
-// HTMLCollection(3) [div.header-menu__logo, div.header-menu__list, div.header-menu__buttons]
-// 0: div.header-menu__logo
-// 1: div.header-menu__list
-// 2: div.header-menu__buttons
+// HTMLCollection(3) [div.logo, div.list, div.buttons]
+// 0: div.logo
+// 1: div.list
+// 2: div.buttons
 // length: 3[[Prototype]]: HTMLCollection
 
 
 // Через шаблоны вставляем основной контент в HEADER DIV
 // 0: div.header-menu__logo
 const headerLogoTPL = `
-    <div class="logo-top">
+    <div class="top-part">
         <div class="logo-1"></div>
         <div class="logo-2"></div>
     </div>
 
-    <div class="logo-bottom logo-3"></div>
+    <div class="bottom-part logo-3"></div>
 `;
 divChildren[0].insertAdjacentHTML('beforeend', headerLogoTPL);
 
-// 1: div.header-menu__list
+// 1: div.list
 const headerMenuTPL = `
     <a class="selected" href="!#">Home</a>
     <a href="!#">Project</a>
@@ -61,10 +61,14 @@ const headerMenuTPL = `
 `;
 divChildren[1].insertAdjacentHTML('beforeend', headerMenuTPL);
 
-// 2: div.header-menu__buttons
+// 2: div.buttons
 const headerBtnTPL = `
-    <button class="button-1">Sign in</button>
-    <button class="button-2">Sign up</button>
+    <a href="!#" class="button-1">
+        <span>Sign in</span>
+    </a>
+    <a href="!#" class="button-2">
+        <span>Sign up</span>
+    </a>
 `;
 divChildren[2].insertAdjacentHTML('beforeend', headerBtnTPL);
 
