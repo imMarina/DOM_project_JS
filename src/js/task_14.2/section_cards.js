@@ -9,13 +9,14 @@ import cardImg7 from '../../static/images/Frame7.png'
 import cardImg8 from '../../static/images/Frame8.png'
 
 
+
 // Создаем и Работаем с SECTION with CARDS
 // Создаем контейнер для SECTION-CARDS
 export const sectionCardsContainer = document.createElement('div');
-sectionCardsContainer.classList.add('container__section-cards'); // <div class="container__section-cards"></div>
+sectionCardsContainer.classList.add('section-cards'); // <div class="container__section-cards"></div>
 
 const sectionCards = document.createElement('section');
-sectionCards.classList.add('section-cards'); // <section class="section-cards"></section>
+sectionCards.classList.add('container-cards'); // <section class="section-cards"></section>
 
 // Создаем 2 элемента DIV для наполнения контентом
 for (let i = 0; i < 2; i++) {
@@ -24,14 +25,14 @@ for (let i = 0; i < 2; i++) {
 }
 
 // Добавляем class для DIV 
-sectionCards.children[0].classList.add('container-text'); // <div class="container-text"></div>
-sectionCards.children[1].classList.add('container-cards'); // <div class="container-cards"></div>
+sectionCards.children[0].classList.add('text-container'); // <div class="container-text"></div>
+sectionCards.children[1].classList.add('cards'); // <div class="container-cards"></div>
 
 
 // Через шаблоны вставляем основной контент в HEADER DIV
 // 0: div.header-menu__logo
 const containerTextTPL = `
-    <a href="!#" class="container-text__button">
+    <a href="!#" class="text__button">
         <span>Our services</span>
     </a>
     <h2>What Creative Design We Offer</h2>
