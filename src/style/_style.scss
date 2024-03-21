@@ -1,6 +1,37 @@
-.test {
-    width: 100px;
-    height: 30px;
-    border: 2px solid rgb(153, 36, 108);
-    background-color: antiquewhite;
+.my-input {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    width: 50%;
+
+    label {
+        font-size: 32px;
+    }
+
+    #input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        // opacity: 0;
+    }
+
+    .custom-input {
+        padding: 32px;
+        height: 36px;
+        font-size: 32px;
+        border: 1px solid black;
+
+        .text-input {
+            display: flex;
+            width: min-content;
+            height: 32px;
+            // border: 1px solid red;
+            & .focused {
+                // caret-color: black;
+                border-right: 1px solid black;
+            }
+        }
+    }
 }
+
