@@ -29,6 +29,9 @@ html {
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
+
+    @import './header/header';
+    @import './main/main_container';
 }
 
 a {

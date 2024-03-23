@@ -1,12 +1,12 @@
 // cards images
-import cardImg1 from '../../static/images/Frame1.png'
-import cardImg2 from '../../static/images/Frame2.png'
-import cardImg3 from '../../static/images/Frame3.png'
-import cardImg4 from '../../static/images/Frame4.png'
-import cardImg5 from '../../static/images/Frame5.png'
-import cardImg6 from '../../static/images/Frame6.png'
-import cardImg7 from '../../static/images/Frame7.png'
-import cardImg8 from '../../static/images/Frame8.png'
+import cardImg1 from '../../../static/images/Frame1.png'
+import cardImg2 from '../../../static/images/Frame2.png'
+import cardImg3 from '../../../static/images/Frame3.png'
+import cardImg4 from '../../../static/images/Frame4.png'
+import cardImg5 from '../../../static/images/Frame5.png'
+import cardImg6 from '../../../static/images/Frame6.png'
+import cardImg7 from '../../../static/images/Frame7.png'
+import cardImg8 from '../../../static/images/Frame8.png'
 
 
 
@@ -25,7 +25,7 @@ for (let i = 0; i < 2; i++) {
 }
 
 // Добавляем class для DIV 
-sectionCards.children[0].classList.add('text-container'); // <div class="container-text"></div>
+sectionCards.children[0].classList.add('container-text'); // <div class="container-text"></div>
 sectionCards.children[1].classList.add('cards'); // <div class="container-cards"></div>
 
 

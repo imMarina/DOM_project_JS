@@ -1,10 +1,7 @@
-import { sectionCardsContainer } from "./section_cards";
 
-// Создаем и Работаем с MAIN
-export const main = document.createElement('main');
 
 // Создаем контейнер для MAIN
-const mainContainer = document.createElement('div');
+export const mainContainer = document.createElement('div');
 mainContainer.classList.add('main-container'); // <div class="main-container"></div>
 
 // Создаем 2 элемента DIV для наполнения контентом
@@ -147,6 +144,4 @@ sectionClientsList.insertAdjacentHTML('beforeend', sectionClientsListTPL);
 mainContainer.children[1].append(sectionClientsList);
 
 
-// MAIN is ready, Добавляем mainContainer в MAIN 
-// Добавляем sectionCardsContainer в MAIN 
-main.append(mainContainer, sectionCardsContainer);
+
